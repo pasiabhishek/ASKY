@@ -34,6 +34,7 @@ def greet():
 def open_web(url):
    # webbrowser.open(f"https://www.youtube.com/search?q=master aazam")
     webbrowser.open(url)
+    print(f"  ASKY : opening {url}")
 
 
 def main(cond):
