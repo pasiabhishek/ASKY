@@ -38,13 +38,10 @@ def greet():
         f"{greeting}. \n\tI am asky, "
         "( Artificial Solutions and Knowledge Yield. )"
         f"\n\tHow can I assist you? "
-
     )
-
-
+    
 def open_website(url):
     webbrowser.open(url)
-
 
 def search_youtube(query):
     talk(f"Searching YouTube for {query}.")
@@ -52,7 +49,6 @@ def search_youtube(query):
     open_website(
         f"https://www.youtube.com/results?search_query={query}"
     )
-
 
 def search_google(query):
     talk(f"Searching Google for {query}.")
@@ -63,30 +59,22 @@ def search_google(query):
 
 
 def search_wikipedia(topic):
-
     try:
-
         result = wikipedia.summary(topic, sentences=2)
-
         talk(result)
 
     except wikipedia.exceptions.DisambiguationError:
-
         talk("There are multiple results. Please be more specific.")
 
     except wikipedia.exceptions.PageError:
-
         talk("Sorry, I could not find that topic.")
 
     except Exception as e:
-
         print(e)
-
         talk("Something went wrong while searching Wikipedia.")
 
 
 def main():
-
     exit_commands = [
         "bye",
         "exit",
