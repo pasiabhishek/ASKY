@@ -13,16 +13,13 @@ engine = pyttsx3.init()
 engine.setProperty("rate", 190)
 engine.setProperty("volume", 1.0)
 
-
 def talk(message):
     print(f"  ASKY : {message}")
     engine.stop()
     engine.say(message)
     engine.runAndWait()
 
-
 def greet():
-
     hour = datetime.now().hour
 
     if 6 <= hour < 12:
