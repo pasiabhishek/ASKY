@@ -21,19 +21,14 @@ def talk(message):
 
 def greet():
     hour = datetime.now().hour
-
     if 6 <= hour < 12:
         greeting = "Good Morning"
-
     elif 12 <= hour < 16:
         greeting = "Good Afternoon"
-
     elif 16 <= hour < 23:
         greeting = "Good Evening"
-
     else:
         greeting = "Good Night"
-
     talk(
         f"{greeting}. \n\tI am asky, "
         "( Artificial Solutions and Knowledge Yield. )"
