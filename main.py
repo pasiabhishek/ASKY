@@ -16,9 +16,9 @@ def talk(message):
     engine.setProperty("rate", 190)
     engine.setProperty("volume", 1.0)
     print(f"  ASKY : {message}")
-    engine.stop()
     engine.say(message)
     engine.runAndWait()
+    engine.stop()
 
 def greet():
     hour = datetime.now().hour
