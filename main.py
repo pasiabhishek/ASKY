@@ -75,6 +75,7 @@ def search_google(query):
     )
 
 
+
 def search_wikipedia(topic):
     # Get a short answer from Wikipedia
     try:
