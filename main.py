@@ -4,7 +4,7 @@ import webbrowser
 import wikipedia
 from datetime import datetime
 from urllib.parse import quote
-import SpeechRecognition
+import speech_recognition as sr
 
 # Just hiding the warning from the wikipedia package
 warnings.filterwarnings("ignore")
