@@ -123,6 +123,7 @@ def main():
 
     while True:
 
+        # user = input("  You : ").lower().strip()
         user = input("  You : ").lower().strip()
 
         # Close ASKY
